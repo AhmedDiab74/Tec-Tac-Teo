@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50sp"
+        android:gravity="center"
+        android:text="Enter Player Names"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/player1"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/x"
+        android:background="@drawable/txt_bg"
+        android:drawablePadding="20sp"
+        android:padding="015sp"
+        android:hint="Player One"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/player2"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="20sp"
+        android:drawableStart="@drawable/o"
+        android:padding="013sp"
+        android:drawablePadding="20sp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:background="@drawable/txt_bg"
+
+        android:hint="Player Two"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/button"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:onClick="Next"
+        android:text="Start Game"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn"
+        android:textSize="20sp" />
+
+</LinearLayout>
